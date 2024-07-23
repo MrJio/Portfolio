@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jiovani.dev</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+    </style>
+</head>
+<body>
+    <div class="video-background">
+        <video autoplay muted loop id="background-video">
+            <source src="files/bg-vid.mov" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+     <!-- MODAL -->
+     <div class="overlay hidden"></div>
+     <div class="container">
+         <div class="connect-modal modal modal-content rounded-4 shadow hidden">
+             <div class="pt-4 text-center">
+                 <h3 class="modal-title">Contact Me</h3>
+             </div>
+             <div class="modal-body p-5 pt-0 text-center">
+                <div class="modal-icons">
+                    <a href="https://www.linkedin.com/in/bahjio/"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://github.com/MrJio"><i class='bx bxl-github'></i></a>
+                    <a href="files/Jiovani_Bah_Resume.pdf"><i class='bx bxs-file'></i></a>
+                    <a href="https://www.tiktok.com/@dev.jio"><i class='bx bxl-tiktok'></i></a>
+                </div>
+                <div class="modal-text">
+                 <p>ReppJio@gmail.com | 301-800-9053 | Maryland </p>
+                 <p>I’m always eager to explore new opportunities and collaborate on innovative projects. Whether you have questions, need a developer, or want to discuss a potential partnership, don’t hesitate to reach out.</p>
+                </div>
+                 <button class="close-modal btns mt-4">Close</button>
+             </div>
+         </div>
+     </div>
+
+    <header class="header">
+        <a href="#home" class="logo">Jiovani <span>Bah</span></a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <nav class="my-navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#projects">Projects</a>
+            <a href="#education">Experience/Education</a>
+            <a href="#about">About</a>
+            <a href="#" class="connect-btn">Connect</a>
+        </nav>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/bahjio/"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://github.com/MrJio"><i class='bx bxl-github'></i></a>
+            <a href="files/Jiovani_Bah_Resume.pdf"><i class='bx bxs-file'></i></a>
+            <a href="https://www.tiktok.com/@dev.jio"><i class='bx bxl-tiktok'></i></a>
+        </div>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-content">
+                <h1>I'm <span>Jiovani Bah</span></h1>
+                <h3><span class="auto-type"></span></h3>
+                <p>Hello! I’m a dedicated Software Engineer with strong skills in Python, Java, JavaScript, and various frameworks like Flask, React and Next.js. My experience spans across both mobile and web, frontend and backend development, and I’m passionate about tackling new challenges. Let’s connect and see how we can collaborate on exciting projects!</p>
+
+            <div class="btn-group mt-4">
+                <a href="#" class="btns">Hire</a>
+                <a href="#contact" class="btns">Contact</a>
+            </div>
+
+        </div>
+    </section>
+
+<!-- Projects -->
+<section class="projects" id="projects">
+    <h2 class="heading mb-4">Project Showcase</h2>
+    <div class="slider">
+        <div class="slide-track">
+            <div class="project-items py-5">
+                <!-- Project 1 -->
+                <div class="project-item">
+                    <div class="project-content">
+                        <img class="project-logo" src="images/logos/wordle-logo.png" alt="wordle-logo">
+                        <h1><b>Wordle Recreation</b></h1>
+                        <p>I utilized HTML, CSS, and JavaScript to recreate one of my favorite games in 2022. This project deepened my understanding of advanced CSS concepts, including grid and flexbox.</p>
+                        <div class="btn-group mt-4 d-flex justify-content-center">
+                            <a href="https://mrjio.github.io/Wordle/" class="btns">Website</a>
+                            <a href="https://github.com/MrJio/Wordle" class="git-icon"><i class='bx bxl-github'></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="project-item">
+                    <div class="project-content">
+                        <img class="project-logo" src="images/logos/calc-logo.webp" alt="wordle-logo">
+                        <h1><b>Easy Finance</b></h1>
+                        <p>Developed a user-friendly web-based budgeting app for friends and family using JS, HTML, and CSS. The app makes tracking expenses and savings easy with dynamic calculations and real-time updates.</p>
+                        <div class="btn-group mt-4 d-flex justify-content-center">
+                            <a href="https://mrjio.github.io/EasyFinance/" class="btns">Website</a>
+                            <a href="https://github.com/MrJio/EasyFinance" class="git-icon"><i class='bx bxl-github'></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="project-item">
+                    <div class="project-content">
+                        <img class="project-logo" src="images/logos/quote-logo.png" alt="wordle-logo">
+                        <h1><b>Quote Generator / Tweeter</b></h1>
+                        <p>Fun JavaScript project that generates random famous quotes and allows users to tweet them directly. This project enhanced my understanding of APIs and social media integrations</p>
+                        <div class="btn-group mt-4 d-flex justify-content-center">
+                            <a href="#" class="btns">Website</a>
+                            <a href="#" class="git-icon"><i class='bx bxl-github '></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 4 -->
+                <div class="project-item">
+                    <div class="project-content">
+                        <img class="project-logo" src="images/logos/fitjoy-logo.jpeg" alt="wordle-logo">
+                        <h1><b>FitJoy</b></h1>
+                        <p>Developed a full-stack fitness application with React Native, TypeScript, and Expo, featuring food logging, recipe creation, and personalized workout planning. Used Firebase/Firestore backend for real-time data synchronization.</p>
+                        <div class="btn-group mt-4 d-flex justify-content-center">
+                            <a href="#" class="btns">Website</a>
+                            <a href="#" class="git-icon"><i class='bx bxl-github'></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-item">
+                    <div class="project-content">
+                        <img class="project-logo" src="images/logos/PingPong-logo.avif" alt="wordle-logo">
+                        <h1><b>Classic Ping Pong Game</b></h1>
+                        <p>I developed a fun ping pong game using JavaScript, where players can challenge an AI opponent with dynamic gameplay and responsive controls. Creating this project was a great way to hone my JavaScript skills and explore AI behavior.</p>
+                        <div class="btn-group mt-4 d-flex justify-content-center">
+                            <a href="#" class="btns">Website</a>
+                            <a href="#" class="git-icon"><i class='bx bxl-github'></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Add more projects here -->
+            </div>
+        </div>
+    </div>
+</section>
+
+    
+    <!-- Education & Experience -->
+    <section class="education" id="education">
+        <h2 class="heading">Experience & Education</h2>
+        <div class="timeline-items">
+            <div class="timeline-item">
+                <div class="timeline-dot">
+                    <i class='bx bxs-briefcase'></i>
+                </div>
+                <div class="timeline-date">Sep 2023 - Present</div>
+                <div class="timeline-content">
+                    <img class="timeline-logo" src="images/logos/gss-logo.jpeg" alt="GeorgeStreetServices">
+                    <h1>Junior Software Engineer</h1>
+                    <h4><b>George Street Services</b></h4>
+                    <h4><b>Hybrid / Frederick, MD</b></h4>
+                    <p>Developed and optimized client products using various technologies, thrived in an Agile environment, and improved user engagement on Circular with a new recommendation system.</p>
+                    </p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot">
+                    <i class='bx bxs-briefcase'></i>
+                </div>
+                <div class="timeline-date">Jul 2024 - Present</div>
+                <div class="timeline-content">
+                    <img class="timeline-logo" src="images/logos/headstarter-logo.jpeg" alt="Headstarter-AI">
+                    <h1>Incoming Software Engineer Fellow</h1>
+                    <h4><b>Headstarter AI</b></h4>
+                    <h4><b>Hybrid / NY </b></h4>
+                    <p>Coming soon...</p>
+                    </p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot">
+                    <i class='bx bxs-briefcase'></i>
+                </div>
+                <div class="timeline-date">May 2023 - Aug 2023</div>
+                <div class="timeline-content">
+                    <img class="timeline-logo" src="images/logos/daly-logo.png" alt="Daly-Computers">
+                    <h1>CDH Engineer</h1>
+                    <h4><b>Daly Computers</b></h4>
+                    <h4><b>In-Person / Frederick, MD </b></h4>
+                    <p>Provided hardware and software support by fixing laptops and optimizing database performance, while also performing system maintenance and updates to enhance reliability and security across multiple systems.</p>
+                    </p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot">
+                    <i class='bx bxs-graduation'></i>
+                </div>
+                <div class="timeline-date">Aug 2021 - May 2025</div>
+                <div class="timeline-content">
+                    <img class="timeline-logo" src="images/logos/hood-logo.jpeg" alt="Hood-College">
+                    <h1>Hood College</h1>
+                    <p>Bachelor of Science in Computer Science & Math Minor</p>
+                    <p><i>IT department (2yr), Resident Assistant</i></p>
+                    </p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot">
+                    <i class='bx bxs-graduation'></i>
+                </div>
+                <div class="timeline-date">Aug 2017 - May 2021 </div>
+                <div class="timeline-content">
+                    <img class="timeline-logo" src="images/logos/north-logo.png" alt="North-High">
+                    <h1>North Hagerstown High School</h1>
+                    <p>IB Student: 4.5/5.0 GPA</p>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!- About ->
+    <section class="pb-5 about" id="about">
+        <div class="container col-xxl-8 px-4 py-5 mb-5">
+            <h2 id="about" class="heading">About me</h2>
+            <div class="row flex-lg-row align-items-center g-5 py-5 carousel-image fade-animation">
+                <div class="col-10 col-sm-8 col-lg-7">
+                    <div id="carouselExampleAutoplaying" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/Photo-1.png" class="w-100 carousel-photo" alt="Photo-1">
+                            </div>
+                            <div class="carousel-item">
+                            <img src="images/Photo-2.png" class="w-100 carousel-photo" alt="Photo-2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/Photo-3.png" class=" w-100 carousel-photo" alt="Photo-3">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/Photo-4.png" class="w-100 carousel-photo" alt="Photo-4">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/Photo-5.png" class="w-100 carousel-photo" alt="Photo-5">
+                            </div>
+                        
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    </div>
+                </div>
+                <div class=" carousel-text">
+                    <p>Hi i’m Jiovani, nickname is Jio (Geo), and I’m a software engineer with a passion for creating viable solutions and bringing ideas to life through code. But outside of work, I’m an outgoing person who loves exploring life’s many adventures. Whether it’s spending quality time with friends and family, going on hikes, or spending time with my girlfriend, I always find joy in the little things. </p>
+                        <br>
+                    <p>I have a WIDE range of interests so I won’t talk about them all. I enjoy art, fashion and dressing nicely. I love cooking with my gf and learning new recipes to try from my mom. I’m also a big fan of sports and enjoy playing basketball with friends. And when it comes to anime, I enjoy debating power scaling or just having normal chats about some anime series we find interesting. </p>
+                        <br>
+                    <p>I consider myself more of an introvert, but I usually get along with most people after some warming up. Whether we’re chatting about tech, sports, family, shows or any social media news, I'm always down to chat about anything. </p>
+                        <br>
+                    <p>I'm also venturing into content creation to share my college and coding journey with the world. I hope to inspire and motivate others to push through the challenges that come with learning something new. I know firsthand how tough it can be when you feel like you’re not making progress, but I’ve learned that persistence and passion can lead to amazing outcomes.</p>
+                        <br>
+                    <p>Feel free to re-explore my portfolio to see my full journey and all of the projects I've worked on. I’m always looking for new opportunities to connect, collaborate, and create something impactful. Let’s make something awesome together!</p>
+                    <div class="d-grid gap-2 d-md-flex justify-content-center">
+                        <button type="button" class="connectBtn btns btn-lg px-4 mt-5 connecter">Connect with me</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="social">
+            <a href="https://www.linkedin.com/in/bahjio/"><i class='bx bxl-linkedin' ></i></a>
+            <a href="https://github.com/MrJio"><i class='bx bxl-github'></i></a>
+            <a href="files/Jiovani_Bah_Resume.pdf"><i class='bx bxs-file'></i></a>
+            <a href="https://www.tiktok.com/@dev.jio"><i class='bx bxl-tiktok' ></i></a>
+        </div>
+        <p class="copywrite"> @ 2024 Jiovani Bah</p>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed(".auto-type",{
+            strings: ["Frontend Developer", "Backend Developer", "Software Engineer", "Software Developer", "Web Developer" , "Data Analyst"],
+            typeSpeed: 60,
+            backSpeed: 80,
+            backDelay: 0,
+            smartBackspace: true,
+            loop: true
+          });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
