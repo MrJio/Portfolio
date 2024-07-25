@@ -543,12 +543,13 @@ span{
     background-color: var(--bg-color);
     width: 50px;
 }
-.carousel-inner{
-    box-shadow: 0 0 25px var(--main-color);
-}
+
 .carousel-inner {
     max-height: 500px;
     margin-left: 40%;
+  }
+  .carousel-item{
+    height: 50vh;
   }
 
 /*--------------------------------------------FOOTER--------------------------------------------*/
