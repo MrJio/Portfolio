@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   track.style.animationPlayState = "paused";
 
-  setTimeout(startAnimation, 1500);
+  setTimeout(startAnimation, 2000);
 
   track.addEventListener("mouseover", () => {
     track.style.animationPlayState = "paused";

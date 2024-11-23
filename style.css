@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -6,7 +8,8 @@
     border: none;
     outline: none;
     scroll-behavior: smooth;
-    font-family: "Roboto Slab", serif;
+    font-family: "Montserrat", sans-serif;
+
 }
 :root{
     --bg-color: #080808;
@@ -54,7 +57,7 @@ body{
     align-items: center;
     z-index: 5;
 }
-/*--------------------------------------------NAV--------------------------------------------*/
+/*---------------------------------------NAV---------------------------------------*/
 .logo{
     text-decoration: none;
     font-size: 3rem;
@@ -88,13 +91,13 @@ body{
     color: var(--main-color);
     display: none;
 }
-/*--------------------------------------------MODAL--------------------------------------------*/
+/*--------------------------------------MODAL--------------------------------------*/
 .modal{
     position: fixed;
     z-index: 10;
     outline: 0;
-    height: 50vh;
-    min-width: 300px;
+    width: 100%;
+    height: 100%;
     pointer-events: auto;
     color: var(--text-color);
     background: rgba(0, 0, 0, 0.8);
@@ -113,66 +116,13 @@ body{
     z-index: 9;
 }
 
-
-.modal-image{
-    transition: 1s;
-    border: none;
-    background-color: white;
-}
-
-.modal-image:hover{
-    transform: scale(1.1);
-}
-.modal{
-    @media (min-width:2000px) {
-        margin: 10% 35%;
-        width: 800px;
-        min-width: 500px;
-    } 
-    @media (max-width:2000px) {
-        margin: 5% 28%;
-        width: 45%;
-        min-width: 500px;
-    }         
-    @media (max-width:1250px) {
-        margin: 5% 30%;
-        width: 35%;
-        min-width: 500px;
-    }
-    @media (max-width:1050px) {
-        margin: 10% 25%;
-        width: 35%;
-        min-width: 500px;
-    }
-    @media (max-width:850px) {
-        margin: 10% 20%;
-        width: 35%;
-        min-width: 450px;
-    }
-    @media (max-width:650px) {
-        margin: 10% 15%;
-        width: 35%;
-        min-width: 400px;
-    }
-    @media (max-width:550px) {
-        margin: 10% 15%;
-        width: 35%;
-        min-width: 350px;
-    }
-    @media (max-width:500px) {
-        width: 100%;
-        margin: 25% 0%;
-        min-width: 300px;
-
-    }
-}
-.modal-icons a{
+.modal-icons a {
     text-decoration: none;
     display: inline-flex;
     justify-content: center;
     align-items: center;
     width: 4.5rem;
-    height:4.5rem;
+    height: 4.5rem;
     background: transparent;
     border: 2px solid var(--main-color);
     font-size: 2.5rem;
@@ -180,22 +130,48 @@ body{
     color: var(--main-color);
     margin: 13px 10px;
     transition: 0.3s ease-in-out;
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in forwards;
 }
-.modal-icons a:hover{
+
+.modal-icons a:hover {
     color: var(--text-color);
-    transform: scale(1.2)translateY(-1px);
+    transform: scale(1.2) translateY(-1px);
     box-shadow: 0 0 25px var(--main-color);
     background-color: var(--main-color);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 .modal-title{
    font-size: 3.5rem;
    font-weight: 800;
    margin-top: 20px;
 }
-.modal-text{
+.modal-text {
     font-size: 1.75rem;
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in forwards;
 }
-/*--------------------------------------------HOME SECTION--------------------------------------------*/
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/*--------------------------------HOME SECTION--------------------------------*/
 .home{
     min-height: 100vh;
     padding: 10rem 12% 3rem;
@@ -322,7 +298,7 @@ span{
     text-align: center;
     margin: 5rem 0;
 }
-/* --------------------------------------------PROJECTS-------------------------------------------- */
+/* -------------------------------PROJECTS------------------------------- */
 .projects {
     overflow: hidden;
     width: 100%;
@@ -434,7 +410,7 @@ span{
     box-shadow: 0 0 25px var(--main-color);
     background-color: var(--main-color); 
 }
-/*--------------------------------------------EDUCATION AND EXPERIENCE--------------------------------------------*/
+/*-----------------------------EDUCATION AND EXPERIENCE----------------------------*/
 .education{
     padding: 100px 15px;
 
@@ -552,13 +528,13 @@ span{
     height: 50vh;
   }
 
-/*--------------------------------------------FOOTER--------------------------------------------*/
+/*--------------------------------FOOTER--------------------------------*/
 footer{
     position: relative;
     bottom: 0;
     width: 100%;
     padding: 40px 0;
-    background-color: var(--bg-color);
+    background-color: transparent;
 }
 .footer .social{
     text-align: center;
@@ -592,7 +568,7 @@ footer{
     color: white;
 }
 
-/*--------------------------------------------RESPONSIVE--------------------------------------------*/
+/*-----------------------------------RESPONSIVE-----------------------------------*/
 @media(max-width: 1800px){
     #home{
         padding-top: 200px;
@@ -680,6 +656,9 @@ footer{
     }
 }
 @media(max-width: 500px){
+    .heading {
+        font-size: 6rem;
+    }
     .project-item{
         width: 400px;
         height: 450px;
