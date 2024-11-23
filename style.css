@@ -171,6 +171,15 @@ body{
         opacity: 1;
     }
 }
+.contact-link {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+    color: gray;
+}
 
 /*--------------------------------HOME SECTION--------------------------------*/
 .home{
