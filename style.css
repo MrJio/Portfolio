@@ -171,6 +171,7 @@ body{
         opacity: 1;
     }
 }
+
 /*--------------------------------HOME SECTION--------------------------------*/
 .home{
     min-height: 100vh;
@@ -613,6 +614,9 @@ footer{
 @media(max-width: 895px){
     #menu-icon{
         display: block;
+    }
+    .modal-text{
+        width: 80%
     }
     .my-navbar {
         position: absolute;
