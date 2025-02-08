@@ -267,7 +267,7 @@ span{
     display: inline-block;
     padding: 1rem 2.8rem;
     background: var(--main-color);
-    box-shadow: 0 0 25px var(--main-color);
+    box-shadow: 0 0 15px var(--main-color);
     border-radius: 4rem;
     font-size: 1.6rem;
     color: black;
@@ -279,7 +279,7 @@ span{
 }
 .btns:hover{
     transform: scale(1.05);
-    box-shadow: 0 0 50px var(--main-color);
+    box-shadow: 0 0 25px var(--main-color);
 }
 .btn-group{
     display: flex;
@@ -325,7 +325,7 @@ span{
   
 .slide-track {
     display: flex;
-    animation: scroll 50s linear infinite;
+    animation: scroll  30s linear infinite;
 }
   
 .project-items {
