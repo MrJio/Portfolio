@@ -12,6 +12,23 @@ document.addEventListener("DOMContentLoaded", () => {
   const closeModalBtn = document.querySelector(".close-modal");
   const openModalBtns = document.querySelectorAll(".connect-btn");
 
+  const header = document.querySelector(".header");
+  let lastScrollY = window.scrollY;
+  let pageHeight = document.documentElement.scrollHeight;
+  let threshold = pageHeight * 0.03;
+
+  window.addEventListener("scroll", () => {
+    const currentScrollY = window.scrollY;
+
+    if (currentScrollY > lastScrollY) {
+      header.classList.add("hide");
+    } else if (currentScrollY < threshold) {
+      header.classList.remove("hide");
+    }
+
+    lastScrollY = currentScrollY;
+  });
+
   openModalBtns.forEach((button) => {
     button.addEventListener("click", openModal);
   });

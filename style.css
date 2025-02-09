@@ -42,18 +42,24 @@ h1{
 .dark-text{
     color: var(--text-color);
 }
+
 .header{
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     padding: 4rem 12% 4rem;
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(10px);
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 5;
+    transition: transform 1s ease-in-out;
+}
+
+.header.hide {
+    transform: translateY(-100%);
 }
 /*---------------------------------------NAV---------------------------------------*/
 .logo{
