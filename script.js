@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const header = document.querySelector(".header");
   let lastScrollY = window.scrollY;
   let pageHeight = document.documentElement.scrollHeight;
-  let threshold = pageHeight * 0.03;
+  let threshold = pageHeight * 0.1;
 
   window.addEventListener("scroll", () => {
     const currentScrollY = window.scrollY;
